@@ -422,10 +422,17 @@
                 </div>
 
                 <div class="buttons">
-                    <a href="#" class="btn btn-primary">Conoceme ↗</a>
-                    <a href="https://www.linkedin.com/in/santiago-steven-arias-estupinan/"
-                        class="btn btn-secondary">Linkedin</a>
+                    <!-- Enlace interno a la ruta 'procedencia' -->
+                    <a href="{{ route('procedencia') }}" class="btn btn-primary">Conóceme ↗</a>
+
+                    <!-- Enlace externo a LinkedIn -->
+                    <a href="https://www.linkedin.com/in/santiago-steven-arias-estupinan/" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-secondary">
+                        LinkedIn
+                    </a>
                 </div>
+
+
             </div>
 
             <div class="right-section">
@@ -453,33 +460,48 @@
         // Efecto ripple en botones
         document.querySelectorAll('.btn').forEach(btn => {
             btn.addEventListener('click', function(e) {
-                e.preventDefault();
+                // Solo bloquear navegación si es un <a>
+                if (this.tagName === 'A') {
+                    e.preventDefault();
 
-                const ripple = document.createElement('span');
-                const rect = this.getBoundingClientRect();
-                const size = Math.max(rect.width, rect.height);
-                const x = e.clientX - rect.left - size / 2;
-                const y = e.clientY - rect.top - size / 2;
+                    const href = this.getAttribute('href');
+                    const target = this.getAttribute('target');
 
-                ripple.style.cssText = `
-                    position: absolute;
-                    width: ${size}px;
-                    height: ${size}px;
-                    left: ${x}px;
-                    top: ${y}px;
-                    border-radius: 50%;
-                    background: rgba(255, 255, 255, 0.5);
-                    transform: scale(0);
-                    animation: ripple 0.6s linear;
-                    pointer-events: none;
-                `;
+                    // ripple effect
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
 
-                this.style.position = 'relative';
-                this.style.overflow = 'hidden';
-                this.appendChild(ripple);
+                    ripple.style.cssText = `
+            position: absolute;
+            width: ${size}px;
+            height: ${size}px;
+            left: ${x}px;
+            top: ${y}px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(0);
+            animation: ripple 0.6s linear;
+            pointer-events: none;
+        `;
 
-                setTimeout(() => ripple.remove(), 600);
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+
+                    setTimeout(() => {
+                        ripple.remove();
+                        if (target === '_blank') {
+                            window.open(href, '_blank');
+                        } else {
+                            window.location.href = href;
+                        }
+                    }, 300); // espera 300ms para que se vea la animación
+                }
             });
+
         });
 
         // Animaciones de entrada
