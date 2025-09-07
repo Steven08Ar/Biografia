@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('/procedencia', function () {
     return view('procedencia');
 })->name('procedencia');
+Route::get('/niñez', function () {
+    return view('niñez');
+})->name('niñez');
