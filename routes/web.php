@@ -26,3 +26,6 @@ Route::get('/menu', function () {
 Route::get('/colegio', function () {
     return view('academia.colegio');
 })->name('colegio');
+Route::get('/universidad', function () {
+    return view('academia.universidad');
+})->name('universidad');

@@ -77,6 +77,22 @@
             background: #ddd;
             transform: translateX(5px);
         }
+
+        .footer-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background: #eee;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            color: #444;
+            cursor: pointer;
+            transition: 0.3s;
+        }
     </style>
 </head>
 
@@ -109,8 +125,12 @@
             <div class="accordion-header">🎓 Academia</div>
             <div class="accordion-content">
                 <a href="{{ route('colegio') }}"><button>Colegio</button></a>
-                <a href=""><button>Universidad</button></a>
+                <a href="{{ route('universidad') }}"><button>Universidad</button></a>
             </div>
+        </div>
+
+        <div class="footer-buttons">
+            <a href="{{ route('futuro') }}"><button class="btn-primary">⬅ Volver</button></a>
         </div>
     </section>
 
