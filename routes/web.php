@@ -32,6 +32,15 @@ Route::get('/segundaexp', function () {
 Route::get('/terceraexp', function () {
     return view('experiencia.terceraexp');
 })->name('terceraexp');
+Route::get('/habilidaduno', function () {
+    return view('habilidades.habilidaduno');
+})->name('habilidaduno');
+Route::get('/habilidaddos', function () {
+    return view('habilidades.habilidaddos');
+})->name('habilidaddos');
+Route::get('/habilidadtres', function () {
+    return view('habilidades.habilidadtres');
+})->name('habilidadtres');
 Route::get('/colegio', function () {
     return view('academia.colegio');
 })->name('colegio');
