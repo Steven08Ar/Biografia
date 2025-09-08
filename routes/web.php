@@ -20,3 +20,6 @@ Route::get('/actualidad', function () {
 Route::get('/futuro', function () {
     return view('futuro');
 })->name('futuro');
+Route::get('/menu', function () {
+    return view('menu');
+})->name('menu');

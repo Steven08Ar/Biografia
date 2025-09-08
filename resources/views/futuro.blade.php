@@ -158,7 +158,7 @@
 
         <div class="footer-buttons">
             <a href="{{ route('actualidad') }}"><button class="btn-primary">⬅ Volver</button></a>
-            <button class="btn-secondary">Siguiente ➡</button>
+            <a href="{{ route('menu') }}"><button class="btn-secondary">Menú ➡</button></a>
         </div>
     </section>
 </body>
