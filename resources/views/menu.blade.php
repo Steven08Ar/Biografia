@@ -100,7 +100,7 @@
             <div class="accordion-content">
                 <a href="{{ route('habilidaduno') }}"><button>Primera habilidad</button></a>
                 <a href="{{ route('habilidaddos') }}"><button>Segunda habilidad</button></a>
-                <a href=""><button>Tercera habilidad</button></a>
+                <a href="{{ route('habilidadtres') }}"><button>Tercera habilidad</button></a>
             </div>
         </div>
 

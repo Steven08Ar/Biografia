@@ -29,3 +29,6 @@ Route::get('/habilidaduno', function () {
 Route::get('/habilidaddos', function () {
     return view('habilidades.habilidaddos');
 })->name('habilidaddos');
+Route::get('/habilidadtres', function () {
+    return view('habilidades.habilidadtres');
+})->name('habilidadtres');
