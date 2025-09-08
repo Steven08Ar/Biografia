@@ -98,9 +98,9 @@
         <div class="accordion">
             <div class="accordion-header">🛠️ Habilidades</div>
             <div class="accordion-content">
-                <button onclick="location.href='habilidad1.html'">Primera habilidad</button>
-                <button onclick="location.href='habilidad2.html'">Segunda habilidad</button>
-                <button onclick="location.href='habilidad3.html'">Tercera habilidad</button>
+                <a href="{{ route('habilidaduno') }}"><button>Primera habilidad</button></a>
+                <a href="{{ route('habilidaddos') }}"><button>Segunda habilidad</button></a>
+                <a href="{{ route('habilidadtres') }}"><button>Tercera habilidad</button></a>
             </div>
         </div>
 
