@@ -90,7 +90,7 @@
             <div class="accordion-content">
                 <a href="{{ route('primeraexp') }}"><button>Primera experiencia</button></a>
                 <a href="{{ route('segundaexp') }}"><button>Segunda experiencia</button></a>
-                <a href=""><button>Tercera experiencia</button></a>
+                <a href="{{ route('terceraexp') }}"><button>Tercera experiencia</button></a>
             </div>
         </div>
 

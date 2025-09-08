@@ -29,3 +29,6 @@ Route::get('/primeraexp', function () {
 Route::get('/segundaexp', function () {
     return view('experiencia.segundaexp');
 })->name('segundaexp');
+Route::get('/terceraexp', function () {
+    return view('experiencia.terceraexp');
+})->name('terceraexp');
