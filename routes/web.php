@@ -11,3 +11,6 @@ Route::get('/procedencia', function () {
 Route::get('/niñez', function () {
     return view('niñez');
 })->name('niñez');
+Route::get('/adolescencia', function () {
+    return view('adolescencia');
+})->name('adolescencia');

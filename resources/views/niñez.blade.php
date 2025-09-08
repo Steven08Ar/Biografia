@@ -134,8 +134,8 @@
         </div>
 
         <div class="footer-buttons">
-            <button class="btn-primary">⬅ Volver</button>
-            <button class="btn-secondary">Siguiente ➡</button>
+            <a href="{{ route('procedencia') }}"><button class="btn-primary">⬅ Volver</button></a>
+            <a href="{{ route('adolescencia') }}"><button class="btn-secondary">Adolescencia ➡</button></a>
         </div>
     </section>
 </body>

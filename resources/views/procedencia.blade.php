@@ -174,7 +174,7 @@
 
         <div class="footer-buttons">
             <a href="{{ route('nombre') }}"><button class="btn-primary">⬅ Volver</button></a>
-            <button class="btn-secondary">Mi niñez ➡</button>
+            <a href="{{ route('niñez') }}"><button class="btn-secondary">Mi niñez ➡</button></a>
         </div>
     </section>
 

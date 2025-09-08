@@ -418,7 +418,7 @@
                 <div class="quote-section">
                     <div class="quote-mark"></div>
                     <p class="quote-text">Me llamo Santiago Steven Arias Estupiñán y soy estudiante de la Universidad
-                        Autonoma de Bucarammanga.</p>
+                        Autónoma de Bucaramanga.</p>
                 </div>
 
                 <div class="buttons">
