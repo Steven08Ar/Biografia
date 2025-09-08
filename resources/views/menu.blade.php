@@ -89,7 +89,7 @@
             <div class="accordion-header">💼 Experiencia Laboral</div>
             <div class="accordion-content">
                 <a href="{{ route('primeraexp') }}"><button>Primera experiencia</button></a>
-                <a href=""><button>Segunda experiencia</button></a>
+                <a href="{{ route('segundaexp') }}"><button>Segunda experiencia</button></a>
                 <a href=""><button>Tercera experiencia</button></a>
             </div>
         </div>

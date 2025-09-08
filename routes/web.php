@@ -26,3 +26,6 @@ Route::get('/menu', function () {
 Route::get('/primeraexp', function () {
     return view('experiencia.primeraexp');
 })->name('primeraexp');
+Route::get('/segundaexp', function () {
+    return view('experiencia.segundaexp');
+})->name('segundaexp');
