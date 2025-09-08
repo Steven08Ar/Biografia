@@ -159,7 +159,7 @@
 
         <div class="footer-buttons">
             <a href="{{ route('adolescencia') }}"><button class="btn-primary">⬅ Volver</button></a>
-            <button class="btn-secondary">Futuro ➡</button>
+            <a href="{{ route('futuro') }}"><button class="btn-secondary">Futuro ➡</button></a>
         </div>
     </section>
 </body>
