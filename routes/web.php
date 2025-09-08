@@ -23,3 +23,6 @@ Route::get('/futuro', function () {
 Route::get('/menu', function () {
     return view('menu');
 })->name('menu');
+Route::get('/habilidaduno', function () {
+    return view('habilidades.habilidaduno');
+})->name('habilidaduno');
