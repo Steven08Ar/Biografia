@@ -23,3 +23,6 @@ Route::get('/futuro', function () {
 Route::get('/menu', function () {
     return view('menu');
 })->name('menu');
+Route::get('/primeraexp', function () {
+    return view('experiencia.primeraexp');
+})->name('primeraexp');
