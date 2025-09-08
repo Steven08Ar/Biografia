@@ -14,3 +14,6 @@ Route::get('/niñez', function () {
 Route::get('/adolescencia', function () {
     return view('adolescencia');
 })->name('adolescencia');
+Route::get('/actualidad', function () {
+    return view('actualidad');
+})->name('actualidad');

@@ -176,7 +176,7 @@
 
         <div class="footer-buttons">
             <a href="{{ route('niñez') }}"><button class="btn-primary">⬅ Volver</button></a>
-            <button class="btn-secondary">Actualmente ➡</button>
+            <a href="{{ route('actualidad') }}"><button class="btn-secondary">Actualmente ➡</button></a>
         </div>
     </section>
 </body>
