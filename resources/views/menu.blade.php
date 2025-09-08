@@ -108,8 +108,8 @@
         <div class="accordion">
             <div class="accordion-header">🎓 Academia</div>
             <div class="accordion-content">
-                <button onclick="location.href='colegio.html'">Colegio</button>
-                <button onclick="location.href='universidad.html'">Universidad</button>
+                <a href="{{ route('colegio') }}"><button>Colegio</button></a>
+                <a href=""><button>Universidad</button></a>
             </div>
         </div>
     </section>
