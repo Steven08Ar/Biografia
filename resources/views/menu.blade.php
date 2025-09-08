@@ -99,7 +99,7 @@
             <div class="accordion-header">🛠️ Habilidades</div>
             <div class="accordion-content">
                 <a href="{{ route('habilidaduno') }}"><button>Primera habilidad</button></a>
-                <a href=""><button>Segunda habilidad</button></a>
+                <a href="{{ route('habilidaddos') }}"><button>Segunda habilidad</button></a>
                 <a href=""><button>Tercera habilidad</button></a>
             </div>
         </div>

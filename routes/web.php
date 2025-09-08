@@ -26,3 +26,6 @@ Route::get('/menu', function () {
 Route::get('/habilidaduno', function () {
     return view('habilidades.habilidaduno');
 })->name('habilidaduno');
+Route::get('/habilidaddos', function () {
+    return view('habilidades.habilidaddos');
+})->name('habilidaddos');
